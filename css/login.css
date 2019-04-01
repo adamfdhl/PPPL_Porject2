@@ -1,0 +1,52 @@
+body {
+    padding-top: 30px;
+    background-image: url('../mockup/gedung-sate-samping.png');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    padding: 15px;
+    display: block;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 3px 6px #100E0E;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button__login {
+    background-color: #4FB2FE;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: #FCF2F2;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button__login:hover {
+    background-color: rgb(21, 132, 218);
+}
+
+#user_icon {
+    width: 120px;
+    height: 120px;
+}

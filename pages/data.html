@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/vizabi/develop/vizabi.css">
+    <link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/bubblechart.css">
+    <title>JABAR VIZ DEV</title>
+    <link rel="stylesheet" href="../css/data.css">
+
+</head>
+<body>
+    <h1 style="text-align: center;">SELAMAT DATANG DI JABAR DATA VISUALIZATION CENTER</h1>
+    <div class="container"> 
+        <div class="placeholder__graph" id="placeholder" style="max-width: 720px; height: 500px; padding-top: 0;"></div>
+        <div class="list__helper">
+            <button class="accordion__helper">COLOR</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+            <button class="accordion__helper">FIND</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+            <button class="accordion__helper">ZOOM</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+            <button class="accordion__helper">OPTIONS</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+            <button class="accordion__helper">EXPAND</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+            <button class="accordion__helper">PRESENT</button>
+            <div class="panel__helper">
+                <p>Lorem ipsum....</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/vizabi/develop/vizabi.min.js"></script>
+<script src="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/preview/master/assets/vendor/js/vizabi-ws-reader/vizabi-ws-reader.js"></script>
+<script src="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/systema-globalis/master/ConfigBubbleChart.js"></script>
+<script src="//s3-eu-west-1.amazonaws.com/static.gapminderdev.org/bubblechart.js"></script>
+<script>
+    var config = {
+          "locale": {
+            "filePath": "https://s3-eu-west-1.amazonaws.com/static.gapminderdev.org/assets/translation/"
+          },
+          "data": {
+            "reader": "csv-time_in_columns",
+            "path": "https://raw.githubusercontent.com/yonasadiel/temp/master/jabar.csv"
+          }
+      };
+
+      Vizabi("BubbleChart", document.getElementById("placeholder"), config);
+</script>
+<script src="../script/accordion.js"></script>
+</body>
+</html>

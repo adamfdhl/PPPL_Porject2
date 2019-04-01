@@ -1,0 +1,82 @@
+body {
+    background-image: url('../mockup/gedung-sate-HD.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* container */
+.container {
+    padding: 40px 76px;
+    text-align: center;
+}
+
+.container__data {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 40px 76px;
+    text-align: center;
+    margin: 0;
+}
+
+.btn__add--column {
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+/* container: button data */
+.btn__data {
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn__data:hover {
+    transform: scale(1.1);
+}
+
+.btn__data:hover::before {
+    content: "Edit ";
+}
+
+.btn__data:hover::after {
+    content: "!";
+}
+
+/* container: button data -- elemen */
+.btn__data--IPM {
+    background-image: linear-gradient(to bottom right, red, yellow);    
+}
+
+.btn__data--kemiskinan {
+    background-image: linear-gradient(to bottom right, green, rgb(120, 233, 15));
+}
+
+.btn__data--kependudukan {
+    background-image: linear-gradient(to bottom right, blue, skyblue);
+}
+
+.btn__data--kesehatan {
+    background-image: linear-gradient(to bottom right, green, red);
+}
+
+.btn__data--pendidikan {
+    background-image: linear-gradient(to bottom right, rgb(107, 0, 128), rgb(238, 93, 238));
+}
+
+.btn__data--tenagaKerja {
+    background-image: linear-gradient(to bottom right, yellow, green);
+}
+
+.btn__data--industri {
+    background-image: linear-gradient(to bottom right, orange, blue);
+}
