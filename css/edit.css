@@ -1,7 +1,5 @@
 body {
-    background-image: url('../mockup/gedung-sate-HD.jpg');
-    background-position: center;
-    background-size: cover;
+    
 }
 
 /* container */
@@ -11,11 +9,11 @@ body {
 }
 
 .container__data {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 40px 76px;
-    text-align: center;
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .btn__add--column {
@@ -29,54 +27,24 @@ body {
 
 /* container: button data */
 .btn__data {
-    border: 1px solid black;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 20px;
+    background-color: #0e76bf;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10px;
+    width: 125px;
     padding: 16px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: transform .5s ease;
+    transform: scale(1);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .2);
 }
 
 .btn__data:hover {
+    transition: transform 1s ease;
     transform: scale(1.1);
-}
-
-.btn__data:hover::before {
-    content: "Edit ";
-}
-
-.btn__data:hover::after {
-    content: "!";
-}
-
-/* container: button data -- elemen */
-.btn__data--IPM {
-    background-image: linear-gradient(to bottom right, red, yellow);    
-}
-
-.btn__data--kemiskinan {
-    background-image: linear-gradient(to bottom right, green, rgb(120, 233, 15));
-}
-
-.btn__data--kependudukan {
-    background-image: linear-gradient(to bottom right, blue, skyblue);
-}
-
-.btn__data--kesehatan {
-    background-image: linear-gradient(to bottom right, green, red);
-}
-
-.btn__data--pendidikan {
-    background-image: linear-gradient(to bottom right, rgb(107, 0, 128), rgb(238, 93, 238));
-}
-
-.btn__data--tenagaKerja {
-    background-image: linear-gradient(to bottom right, yellow, green);
-}
-
-.btn__data--industri {
-    background-image: linear-gradient(to bottom right, orange, blue);
 }
