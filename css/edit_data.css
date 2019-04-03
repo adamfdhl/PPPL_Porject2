@@ -39,7 +39,8 @@
 }
 
 .btn__save:hover {
-    background-color: rgba(6, 116, 210, 1);
+    background-color: rgb(10, 84, 150);
+    transform: scale(1.1);
 }
 
 .col-header {
